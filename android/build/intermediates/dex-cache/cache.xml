@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/biphilip/AndroidStudioProjects/TabInsight/Application/build/intermediates/exploded-aar/com.android.support/support-v13/23.0.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="bb0ac3f3ee2d71854501cc28e52cc84a20209b41">
+        <dex dex="/Users/biphilip/AndroidStudioProjects/TabInsight/Application/build/intermediates/pre-dexed/debug/classes-4c9369e2e975cbc9fddeadf5d2e37c3bd5ad9ba8.jar" />
+    </item>
+    <item
+        jar="/Users/biphilip/AndroidStudioProjects/TabInsight/Application/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.0.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="4356e230a981d1bbf047d848b91bc0d9b7c5bacc">
+        <dex dex="/Users/biphilip/AndroidStudioProjects/TabInsight/Application/build/intermediates/pre-dexed/debug/classes-604de6520589a750463bd82696710a7a7352cdfb.jar" />
+    </item>
+    <item
+        jar="/Users/biphilip/AndroidStudioProjects/TabInsight/Application/build/intermediates/exploded-aar/com.android.support/support-v13/23.0.0/jars/libs/internal_impl-23.0.0.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="5d4bccb885c8a89d066ecb6c4addb553a99a79a2">
+        <dex dex="/Users/biphilip/AndroidStudioProjects/TabInsight/Application/build/intermediates/pre-dexed/debug/internal_impl-23.0.0-8f11f6d9f7110fbc997a03365aa129cb1abd12f1.jar" />
+    </item>
+    <item
+        jar="/Users/biphilip/AndroidStudioProjects/TabInsight/Application/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/jars/libs/internal_impl-23.0.1.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="aa92916125166649d8ad4ba3940c3dd7515596d3">
+        <dex dex="/Users/biphilip/AndroidStudioProjects/TabInsight/Application/build/intermediates/pre-dexed/debug/internal_impl-23.0.1-febfecc2640cc9dd7ebc253ba733767b8008f603.jar" />
+    </item>
+    <item
+        jar="/Users/biphilip/AndroidStudioProjects/TabInsight/Application/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="c31e21b53ff2f74664e498248d01453a32e32d48">
+        <dex dex="/Users/biphilip/AndroidStudioProjects/TabInsight/Application/build/intermediates/pre-dexed/debug/classes-c326e8ce772c9fc5e9f1dc072de3d0578676f30d.jar" />
+    </item>
+    <item
+        jar="/Users/biphilip/AndroidStudioProjects/TabInsight/Application/build/intermediates/exploded-aar/com.android.support/cardview-v7/23.0.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="1ccbc26be2c465c622a48310e8092241b01abe80">
+        <dex dex="/Users/biphilip/AndroidStudioProjects/TabInsight/Application/build/intermediates/pre-dexed/debug/classes-896e5b0bd7c7bc0a006e5b249ab674bf05f323fe.jar" />
+    </item>
+    <item
+        jar="/Users/biphilip/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/23.0.1/support-annotations-23.0.1.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="1fce89a6428c51467090d7f424e4c9c3dbd55f7e">
+        <dex dex="/Users/biphilip/AndroidStudioProjects/TabInsight/Application/build/intermediates/pre-dexed/debug/support-annotations-23.0.1-e2ec3b6e014ff32fe72653a0ecc73855ef33125e.jar" />
+    </item>
+    <item
+        jar="/Users/biphilip/AndroidStudioProjects/TabInsight/Application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="81d42bf983a8741f4888a6e333e454e4a5e0eeb7">
+        <dex dex="/Users/biphilip/AndroidStudioProjects/TabInsight/Application/build/intermediates/pre-dexed/debug/classes-772aa32ebcbf8e7a52b0a56f6554eef6cf49df85.jar" />
+    </item>
+
+</items>
