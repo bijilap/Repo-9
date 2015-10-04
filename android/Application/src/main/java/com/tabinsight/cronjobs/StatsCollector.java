@@ -35,6 +35,7 @@ public class StatsCollector extends Service {
 
     @Override
     public void onCreate() {
+        Log.d(LogTags.APP_INFO.name(), "Service started");
 
         appsInfoDatasource = new AppsInfoDatasource(getBaseContext());
         mUsageStatsManager = (UsageStatsManager) getSystemService(Context.USAGE_STATS_SERVICE);
@@ -50,13 +51,15 @@ public class StatsCollector extends Service {
                     continue;
                 }
                 UsageStats usageStat = usageStatsMap.get(name);
-                Log.d(LogTags.APP_INFO.name(), usageStat.getLastTimeUsed() + "\tdummydevice" + usageStat.getPackageName() + "\t" + usageStat.getTotalTimeInForeground());
+                Log.d(LogTags.APP_INFO.name(), usageStat.getLastTimeUsed() + "\tdummydevice" + usageStat.getPackageName() + "\t" + (usageStat.getTotalTimeInForeground()/1000));
                 appsInfoDatasource.createEntry(name, usageStat.getLastTimeStamp() + "", usageStat.getTotalTimeInForeground());
             }
         }
         catch(SQLException e){
             Log.d(LogTags.APP_EXCEPTION.name(), "SQLException");
         }
+        Log.d(LogTags.APP_INFO.name(), "Service stopped");
+        stopSelf();
     }
 
     @Override
