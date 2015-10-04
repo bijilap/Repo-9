@@ -24,6 +24,9 @@
         android:targetSdkVersion="23" />
 
     <uses-permission android:name="android.permission.PACKAGE_USAGE_STATS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
 
     <application
         android:allowBackup="true"
@@ -39,6 +42,29 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <service
+            android:name="com.tabinsight.cronjobs.StatsCollector"
+            android:enabled="true"
+            android:exported="true" >
+        </service>
+
+        <receiver
+            android:name="com.tabinsight.cronjobs.StatsCollectionAlarmReceiver"
+            android:enabled="true"
+            android:exported="true" >
+        </receiver>
+        <receiver
+            android:name="com.tabinsight.cronjobs.ServerUploaderReceiver"
+            android:enabled="true"
+            android:exported="true" >
+        </receiver>
+
+        <service
+            android:name="com.tabinsight.cronjobs.ServerUploader"
+            android:enabled="true"
+            android:exported="true" >
+        </service>
     </application>
 
 </manifest>

@@ -22,5 +22,5 @@
         statistics. You may need to enable access
         for this app through Settings > Security > Apps with usage access
     </string>
-    <string name="server_ip_address">"127.0.0.1"</string>
+    <string name="server_ip_address">"192.168.88.230:5000"</string>
 </resources>

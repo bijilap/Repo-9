@@ -11,6 +11,7 @@ import java.io.OutputStreamWriter;
 import java.net.URI;
 import java.net.URL;
 import java.net.URLConnection;
+import java.net.URLEncoder;
 
 /**
  * Created by biphilip on 10/3/15.
@@ -35,6 +36,7 @@ public class RestClient extends AsyncTask<String, String, String> {
                     OutputStreamWriter wr = new OutputStreamWriter(conn.getOutputStream());
                     JSONObject payload = createPostPayload(params);
                     wr.write(payload.toString());
+                    System.out.println(payload.toString());
                     wr.flush();
 
                     BufferedReader br = new BufferedReader(new InputStreamReader(
@@ -51,7 +53,7 @@ public class RestClient extends AsyncTask<String, String, String> {
             }
         }
         catch(Exception ex){
-
+            ex.printStackTrace();
         }
 
         return null;

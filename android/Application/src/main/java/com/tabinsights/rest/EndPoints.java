@@ -4,7 +4,7 @@ package com.tabinsights.rest;
  * Created by biphilip on 10/3/15.
  */
 public enum EndPoints {
-    PUBLISH_DEVICE_LOGS("publish/log");
+    PUBLISH_DEVICE_LOGS("/publish/log");
 
     private final String name;
 
