@@ -16,8 +16,6 @@
 
 package com.example.android.appusagestatistics;
 
-import com.example.android.appusagestatistics.AppUsageStatisticsFragment.StatsUsageInterval;
-
 import android.app.usage.UsageStats;
 import android.app.usage.UsageStatsManager;
 import android.test.ActivityInstrumentationTestCase2;
