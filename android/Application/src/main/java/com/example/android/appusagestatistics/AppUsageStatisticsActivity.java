@@ -16,8 +16,11 @@
 
 package com.example.android.appusagestatistics;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
+
+import com.tabinsight.cronjobs.StatsCollector;
 
 /**
  * Launcher Activity for the App Usage Statistics sample app.
@@ -27,6 +30,7 @@ public class AppUsageStatisticsActivity extends ActionBarActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        startService(new Intent(this, StatsCollector.class));
         setContentView(R.layout.activity_app_usage_statistics);
         if (savedInstanceState == null) {
             getSupportFragmentManager().beginTransaction()

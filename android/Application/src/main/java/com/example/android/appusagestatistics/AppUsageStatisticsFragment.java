@@ -42,6 +42,8 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
+import com.example.android.appusagestatistics.StatsUsageInterval;
+
 /**
  * Fragment that demonstrates how to use App Usage Statistics API.
  */
@@ -105,6 +107,7 @@ public class AppUsageStatisticsFragment extends Fragment {
             String[] strings = getResources().getStringArray(R.array.action_list);
 
             @Override
+
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 StatsUsageInterval statsUsageInterval = StatsUsageInterval
                         .getValue(strings[position]);
@@ -196,36 +199,6 @@ public class AppUsageStatisticsFragment extends Fragment {
         @Override
         public int compare(UsageStats left, UsageStats right) {
             return (int) (right.getLastTimeUsed() - left.getLastTimeUsed());
-        }
-    }
-
-    /**
-     * Enum represents the intervals for {@link android.app.usage.UsageStatsManager} so that
-     * values for intervals can be found by a String representation.
-     *
-     */
-    //VisibleForTesting
-    static enum StatsUsageInterval {
-        DAILY("Daily", UsageStatsManager.INTERVAL_DAILY),
-        WEEKLY("Weekly", UsageStatsManager.INTERVAL_WEEKLY),
-        MONTHLY("Monthly", UsageStatsManager.INTERVAL_MONTHLY),
-        YEARLY("Yearly", UsageStatsManager.INTERVAL_YEARLY);
-
-        private int mInterval;
-        private String mStringRepresentation;
-
-        StatsUsageInterval(String stringRepresentation, int interval) {
-            mStringRepresentation = stringRepresentation;
-            mInterval = interval;
-        }
-
-        static StatsUsageInterval getValue(String stringRepresentation) {
-            for (StatsUsageInterval statsUsageInterval : values()) {
-                if (statsUsageInterval.mStringRepresentation.equals(stringRepresentation)) {
-                    return statsUsageInterval;
-                }
-            }
-            return null;
         }
     }
 }
